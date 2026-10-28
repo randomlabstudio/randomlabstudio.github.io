@@ -38,18 +38,23 @@ h1{font-size:clamp(2.1rem,7vw,3.4rem)} h2{font-size:clamp(1.5rem,4.5vw,2rem)} h3
 /* Idioma: se muestra solo el bloque del idioma activo (por defecto, español) */
 html[data-lang="en"] [data-l="es"],html:not([data-lang="en"]) [data-l="en"]{display:none!important}
 
-/* Barra superior (páginas internas) */
-.bar{background:linear-gradient(135deg,var(--hero-a),var(--hero-b))}
-.bar-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem clamp(1rem,4vw,2.5rem);flex-wrap:wrap}
-.bar-logo img{height:34px;width:auto}
-.bar-links{display:flex;align-items:center;gap:.5rem}
-.bar-links a,.hero-links a{color:rgba(255,255,255,.8);font-weight:700;font-size:.95rem;text-decoration:none;transition:color .3s}
-.bar-links a:hover,.hero-links a:hover{color:#fff}
+/* Barra superior (páginas internas): azul sólido del estudio, siempre legible */
+.bar{background:var(--blue);position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.7rem clamp(1rem,4vw,2.5rem);flex-wrap:wrap;max-width:75rem;margin:0 auto}
+.bar-logo{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-family:var(--head);font-size:1.3rem;letter-spacing:.01em}
+.bar-logo img{height:38px;width:auto}
+.bar-links{display:flex;align-items:center;gap:.4rem}
+.bar-links a{color:#fff;font-weight:800;font-size:1rem;text-decoration:none;padding:.4rem .75rem;border-radius:999px;transition:background .2s}
+.bar-links a:hover{background:rgba(255,255,255,.2)}
+.hero-links a{color:rgba(255,255,255,.85);font-weight:700;font-size:.95rem;text-decoration:none;transition:color .3s}
+.hero-links a:hover{color:#fff}
 .sep{color:rgba(255,255,255,.4)}
-.lang{display:inline-flex;border:2px solid rgba(255,255,255,.7);border-radius:999px;overflow:hidden;margin-left:.6rem}
-.lang button,.lang-tabs button{font:700 .85rem var(--body);cursor:pointer;border:0;background:transparent;color:#fff;padding:.25rem .7rem}
+.bar-links .sep{display:none}
+.lang{display:inline-flex;border:2px solid rgba(255,255,255,.75);border-radius:999px;overflow:hidden;margin-left:.4rem}
+.lang button,.lang-tabs button{font:800 .85rem var(--body);cursor:pointer;border:0;background:transparent;color:#fff;padding:.3rem .75rem}
 .lang button[aria-pressed="true"]{background:#fff;color:var(--blue)}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:480px){.bar-logo{font-size:1.1rem}.bar-logo img{height:30px}.bar-links a{padding:.35rem .5rem;font-size:.95rem}}
 
 /* Inicio: héroe a pantalla completa + bandas */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#2f9bf2 0%,var(--blue) 42%,#012a52 100%);padding:0}
@@ -143,3 +148,13 @@ th{background:var(--accent);color:var(--on-accent)}
 .hero-solo{min-height:70vh;display:flex;align-items:center;padding:3rem 0}
 .hero-solo .wrap{width:100%}
 [hidden]{display:none!important}
+
+/* Fruit Stack: el héroe llena el espacio entre la barra y el pie */
+main{display:flex;flex-direction:column}
+.hero-solo{flex:1;min-height:0;padding:3rem 0;background:linear-gradient(170deg,#4b2d86 0%,#8a4a9a 38%,#e8774a 78%,#f2b632 100%)}
+.hero-solo .icon{width:136px!important;height:136px!important;border-radius:32px}
+.hero-solo h1{font-size:clamp(3rem,10vw,5rem);margin-bottom:.4rem;text-shadow:0 4px 0 #4e2c16}
+.ribbon{display:table;margin:0 auto 1.6rem!important;padding:.35rem 1.6rem;background:var(--green);color:#fff;border-radius:12px;font-family:var(--head);font-size:clamp(1.2rem,4vw,1.7rem);letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.hero-solo .pill.soon{font-size:1.1rem;padding:.7rem 1.6rem;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.foot .sep{display:none}
+.foot a{display:inline-block;margin:.2rem .8rem}
