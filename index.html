@@ -27,40 +27,43 @@
 </head>
 <body>
 <a class="skip" href="#main"><span data-l="es">Saltar al contenido</span><span data-l="en">Skip to content</span></a>
-<header class="site-head"><div class="wrap">
-  <a class="brand" href="./"><img src="./assets/img/studio-logo.png" width="600" height="454" alt="" style="height:40px;width:auto"><span>Random Lab Studio</span></a>
-  <nav class="nav" aria-label="Principal">
-    <a href="./"><span data-l="es">Inicio</span><span data-l="en">Home</span></a>
-    <a href="./fruit-stack/">Fruit Stack</a>
-    <a href="./fruit-stack/privacidad/"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a>
-    <span class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button></span>
-  </nav>
-</div></header>
+
 <main id="main">
 
-<section class="hero hero-studio"><div class="wrap">
-  <img src="./assets/img/studio-logo.png" width="600" height="454" alt="Random Lab Studio">
-  <h1 class="sr-title" style="position:absolute;left:-999px">Random Lab Studio</h1>
-  <p data-l="es">Un estudio independiente de México que hace juegos pequeños, claros y divertidos, sin cuentas, sin anuncios por sorpresa y sin rastreo.</p>
-  <p data-l="en">An independent studio from Mexico making small, clear, fun games, with no accounts, no surprise ads and no tracking.</p>
-</div></section>
-<section class="block"><div class="wrap">
-  <h2><span data-l="es">Nuestros juegos</span><span data-l="en">Our games</span></h2>
-  <div class="grid">
-    <a class="card game-card" href="./fruit-stack/">
-      <img src="./assets/img/fruit-stack/icon-192.webp" width="192" height="192" alt="" style="width:96px;height:96px">
-      <span><h3>Fruit Stack: Sky Tower</h3>
-      <p data-l="es">Apila cajas de fruta desde el mercado hasta el espacio.</p>
-      <p data-l="en">Stack fruit crates from the market all the way to space.</p>
-      <span class="badge"><span data-l="es">Próximamente en Google Play</span><span data-l="en">Coming soon to Google Play</span></span></span>
+<section class="hero">
+  <nav class="hero-nav" aria-label="Principal">
+    <a class="hero-mini" href="./" aria-label="Random Lab Studio"><img src="./assets/img/studio-logo.png" width="600" height="454" alt=""></a>
+    <span class="hero-links">
+      <a href="#juegos"><span data-l="es">Juegos</span><span data-l="en">Our Games</span></a><span class="sep">|</span><a href="#nosotros"><span data-l="es">Nosotros</span><span data-l="en">About Us</span></a>
+      <span class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button></span>
+    </span>
+  </nav>
+  <h1 class="sr-only">Random Lab Studio</h1>
+  <img class="hero-logo" src="./assets/img/studio-logo.png" width="600" height="454" alt="Random Lab Studio">
+</section>
+<section class="band band-a" id="juegos">
+  <h2><span data-l="es">Nuestros juegos</span><span data-l="en">Our Games</span></h2>
+  <div class="game-list">
+    <a class="game" href="./fruit-stack/">
+      <img src="./assets/img/fruit-stack/icon-192.webp" width="192" height="192" alt="">
+      <span class="game-name">Fruit Stack: Sky Tower</span>
+      <span class="game-desc" data-l="es">Apila cajas de fruta desde el mercado hasta el espacio.</span>
+      <span class="game-desc" data-l="en">Stack fruit crates from the market all the way to space.</span>
+      <span class="badge"><span data-l="es">Próximamente en Google Play</span><span data-l="en">Coming soon to Google Play</span></span>
     </a>
   </div>
-</div></section>
+</section>
+<section class="band band-b" id="nosotros">
+  <h2><span data-l="es">Nosotros</span><span data-l="en">About Us</span></h2>
+  <p data-l="es">Somos un estudio independiente de México que hace juegos pequeños, fáciles de entender y rápidos de jugar.</p>
+  <p data-l="en">We are an independent studio from Mexico making small games that are easy to understand and quick to play.</p>
+</section>
 </main>
-<footer class="site-foot"><div class="wrap">
-  <span>&copy; 2026 Random Lab Studio · Random Lab Studio · México</span>
-  <span><span data-l="es">Contacto:</span><span data-l="en">Contact:</span> <a href="mailto:randomlabstudio@gmail.com">randomlabstudio@gmail.com</a></span>
-  <span><a href="./fruit-stack/privacidad/"><span data-l="es">Política de privacidad</span><span data-l="en">Privacy policy</span></a> · <span data-l="es">Este sitio no usa cookies ni analítica.</span><span data-l="en">This site uses no cookies or analytics.</span></span>
-</div></footer>
+<footer class="foot">
+  <a href="./privacidad/"><span data-l="es">Privacidad del sitio</span><span data-l="en">Site privacy</span></a>
+  <span class="sep">|</span>
+  <a href="mailto:randomlabstudio@gmail.com">randomlabstudio@gmail.com</a>
+  <p class="copy">&copy; 2026 Random Lab Studio. <span data-l="es">Por ahora este sitio no usa cookies ni analítica.</span><span data-l="en">For now, this site uses no cookies or analytics.</span></p>
+</footer>
 </body>
 </html>
