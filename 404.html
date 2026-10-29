@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>404 · Random Lab Studio</title>
 <meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.png">
 <style>
 /* Esta página se sirve desde cualquier ruta, así que no puede usar rutas relativas: es autónoma. */
@@ -21,10 +23,5 @@ a:focus-visible{outline:3px solid #f2b632;outline-offset:3px}
 <p lang="en">This crate fell off the tower: the page doesn't exist.</p>
 <a id="home" href="/">Inicio · Home</a>
 </main>
-<script>
-/* Calcula la raíz del sitio: /randomlabstudio.github.io/ como sitio de proyecto, o / en un dominio propio. */
-(function(){var p=location.pathname.split("/")[1],h=document.getElementById("home");
-if(location.hostname.slice(-10)===".github.io"&&p==="randomlabstudio.github.io")h.href="/randomlabstudio.github.io/";})();
-</script>
 </body>
 </html>
