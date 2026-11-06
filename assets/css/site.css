@@ -158,3 +158,12 @@ main{display:flex;flex-direction:column}
 .hero-solo .pill.soon{font-size:1.1rem;padding:.7rem 1.6rem;box-shadow:0 4px 0 rgba(0,0,0,.25)}
 .foot .sep{display:none}
 .foot a{display:inline-block;margin:.2rem .8rem}
+
+/* Ajustes de pantallas: menú sin saltos de línea, botones más cómodos al tacto, pantallas anchas */
+.hero-links a,.bar-links a{white-space:nowrap}
+.hero-links a{padding:.7rem .45rem}
+.lang button,.lang-tabs button{padding:.55rem .9rem}
+.foot a{padding:.6rem .4rem;margin:0 .5rem}
+.hero-nav{left:50%;right:auto;transform:translateX(-50%);width:min(100% - 2rem,90rem)}
+@media (max-width:400px){.hero-links{gap:.1rem}.hero-links a{font-size:.85rem;padding:.7rem .3rem}.lang{margin-left:.2rem}.lang button{padding:.5rem .6rem}.hero-mini img{height:26px}}
+@media (min-width:1200px){.hero-mini img{height:38px}.hero-links a{font-size:1.05rem}.doc{max-width:860px;font-size:1.1rem}.sec h2{font-size:1.4rem}}
